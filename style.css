@@ -8,7 +8,14 @@ body {
   background-color: #dfe1e3;
 }
 
-.half-screen-bg {
+svg {
+  transform: rotate(180deg);
+  width: 40vmin;
+  height: 40vmin;
+  filter: drop-shadow(2px 2px 10px gray);
+}
+
+.dark-bg {
   position: absolute;
   top: 0;
   left: 0;
@@ -24,11 +31,9 @@ body {
   transform: translate(-50%, -50%);
 }
 
-svg {
-  transform: rotate(180deg);
-  width: 40vmin;
-  height: 40vmin;
-  filter: drop-shadow(2px 2px 10px gray);
+.border {
+  stroke: white;
+  stroke-width: 5;
 }
 
 .line {
